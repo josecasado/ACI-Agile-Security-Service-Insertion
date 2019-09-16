@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+ACI Security -- Welcome
+{% endblock %}
+
+{% block title1 %}
+Thermos -- Welcome
+{% endblock %}
+
+{%block content %}
+  <article>
+      <header>
+          <h1>
+            <p>ACI-SECURITY Demo </p>
+
+          </h1>
+
+      </header>
+      <section>
+          <h2>Defend the {{ title }}</h2>
+          <p>  {{ text }}</p>
+      </section>
+      <section>
+          <h2>Defend the {{ title1 }}</h2>
+          <p>  FTD: Managed or Unmanaged</p>
+      </section>
+      <p>
+        <p style="text-align:center;"><img src=/static/img/completa.png/ width="300" height="150">
+      </p>
+  </article>
+
+  {% endblock %}

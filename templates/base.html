@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/normalize.min.css">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <script src="../static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <a href="{{ url_for("index") }}"><h1 class="title">CISCO DATA CENTER SECURITY</h1></a>
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for("insertagext") }}">Protect Perimeter</a></li>
+                        <li><a href="{{ url_for("insertagint") }}">Protect DB</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+              <article class=flashes>
+                {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                    <ul class=flashes>
+                      {% for message in messages %}
+                        <li>{{ message}}</li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                {% endwith %}
+              </article>
+
+
+                {% block content %}
+                {% endblock %}
+
+                {% block sidebar %}
+                  <aside>
+
+                      <p>ACI Service Insertion, virtual and physical. <br> <br> ASA and FTD are used. <br> <br> FTD Insertion could be managed. <br> <br> FMC remediation module to test quarantining threats</p>
+                      <p>
+                        <p style="text-align:center;"><img src=/static/img/jcasado.png/ width="225" height="170">
+                      </p>
+
+                  </>
+                {% endblock %}
+
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>Copyright El casado.com</h3>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="/static/js/main.js"></script>
+
+    </body>
+</html>
