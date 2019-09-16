@@ -1,0 +1,198 @@
+{
+  "fvTenant": {
+    "attributes": {
+      "dn": "uni/tn-t_name",
+      "status": "modified"
+    },
+    "children": [
+      {
+        "fvAp": {
+          "attributes": {
+            "dn": "uni/tn-t_name/ap-anp_name",
+            "status": "modified"
+          },
+          "children": [
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ap-anp_name/epg-epg_web_name",
+                  "status": "modified"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "tnVzBrCPName": "contract_web_name",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vzBrCP": {
+          "attributes": {
+            "dn": "uni/tn-t_name/brc-contract_web_name",
+            "status": "modified"
+          },
+          "children": [
+            {
+              "vzSubj": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/brc-contract_web_name/subj-subject_web_name",
+                  "status": "modified"
+                },
+                "children": [
+                  {
+                    "vzRsSubjGraphAtt": {
+                      "attributes": {
+                        "tnVnsAbsGraphName": "ASA5515-PHY",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vnsLDevCtx": {
+          "attributes": {
+            "dn": "uni/tn-t_name/ldevCtx-c-contract_web_name-g-ASA5515-PHY-n-N1",
+            "ctrctNameOrLbl": "contract_web_name",
+            "graphNameOrLbl": "ASA5515-PHY",
+            "nodeNameOrLbl": "N1",
+            "status": "created,modified",
+            "rn": "ldevCtx-c-contract_web_name-g-ASA5515-PHY-n-N1"
+          },
+          "children": [
+            {
+              "vnsLIfCtx": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ldevCtx-c-contract_web_name-g-ASA5515-PHY-n-N1/lIfCtx-c-consumer",
+                  "connNameOrLbl": "consumer",
+                  "status": "created,modified",
+                  "rn": "lIfCtx-c-consumer"
+                },
+                "children": [
+                  {
+                    "vnsRsLIfCtxToBD": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/BD-bd_asapbr_ext",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToLIf": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/lDevVip-ASA5515/lIf-OUT",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToSvcRedirectPol": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/svcCont/svcRedirectPol-ASAv-PBR-EXT",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "vnsLIfCtx": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ldevCtx-c-contract_web_name-g-ASA5515-PHY-n-N1/lIfCtx-c-provider",
+                  "connNameOrLbl": "provider",
+                  "status": "created,modified",
+                  "rn": "lIfCtx-c-provider"
+                },
+                "children": [
+                  {
+                    "vnsRsLIfCtxToBD": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/BD-bd_asapbr_ext",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToLIf": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/lDevVip-ASA5515/lIf-IN",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToSvcRedirectPol": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/svcCont/svcRedirectPol-ASAv-PBR-EXT",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "vnsRsLDevCtxToLDev": {
+                "attributes": {
+                  "tDn": "uni/tn-t_name/lDevVip-ASA5515",
+                  "status": "created,modified"
+                },
+                "children": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "l3extOut": {
+          "attributes": {
+            "dn": "uni/tn-t_name/out-l3out_name",
+            "status": "modified"
+          },
+          "children": [
+            {
+              "l3extInstP": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/out-l3out_name/instP-l3out_epg_name",
+                  "status": "modified"
+                },
+                "children": [
+                  {
+                    "fvRsCons": {
+                      "attributes": {
+                        "tnVzBrCPName": "contract_web_name",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

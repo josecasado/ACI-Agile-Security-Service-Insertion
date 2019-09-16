@@ -1,0 +1,79 @@
+{
+  "fvBD": {
+    "attributes": {
+      "arpFlood": "no",
+      "descr": "",
+      "dn": "uni/tn-t_name/BD-bd_asapbr_ext",
+      "epClear": "no",
+      "epMoveDetectMode": "",
+      "ipLearning": "no",
+      "limitIpLearnToSubnets": "yes",
+      "llAddr": "::",
+      "mcastAllow": "no",
+      "multiDstPktAct": "bd-flood",
+      "name": "bd_asapbr_ext",
+      "nameAlias": "",
+      "ownerKey": "",
+      "ownerTag": "",
+      "type": "regular",
+      "unicastRoute": "yes",
+      "unkMacUcastAct": "proxy",
+      "unkMcastAct": "flood",
+      "vmac": "not-applicable"
+    },
+    "children": [
+      {
+        "igmpIfP": {
+          "attributes": {
+            "descr": "",
+            "name": "",
+            "nameAlias": ""
+          }
+        }
+      },
+      {
+        "fvSubnet": {
+          "attributes": {
+            "ctrl": "",
+            "descr": "",
+            "ip": "192.168.204.1/24",
+            "name": "",
+            "nameAlias": "",
+            "preferred": "no",
+            "scope": "private",
+            "virtual": "no"
+          }
+        }
+      },
+      {
+        "fvRsIgmpsn": {
+          "attributes": {
+            "tnIgmpSnoopPolName": ""
+          }
+        }
+      },
+      {
+        "fvRsCtx": {
+          "attributes": {
+            "tnFvCtxName": "vrf_name"
+          }
+        }
+      },
+      {
+        "fvRsBdToEpRet": {
+          "attributes": {
+            "resolveAct": "resolve",
+            "tnFvEpRetPolName": ""
+          }
+        }
+      },
+      {
+        "fvRsBDToNdP": {
+          "attributes": {
+            "tnNdIfPolName": ""
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "vnsDevMgr": {
+        "attributes": {
+          "descr": "",
+          "dn": "uni/tn-t_name/devMgr-FMC",
+          "name": "FMC",
+          "nameAlias": "",
+          "ownerKey": "",
+          "ownerTag": ""
+        },
+        "children": [
+          {
+            "vnsRsDevMgrToMDevMgr": {
+              "attributes": {
+                "tDn": "uni/infra/mDevMgr-CISCO-FTDmgr_FI-1.0"
+              }
+            }
+          },
+          {
+            "vnsCMgmts": {
+              "attributes": {
+                "host": "10.6.80.145",
+                "name": "",
+                "nameAlias": "",
+                "port": "443"
+              }
+            }
+          },
+          {
+            "vnsCCredSecret": {
+              "attributes": {
+                "name": "password",
+                "nameAlias": "",
+                "value": "Cisco123"
+              }
+            }
+          },
+          {
+            "vnsCCred": {
+              "attributes": {
+                "name": "username",
+                "nameAlias": "",
+                "value": "apic"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

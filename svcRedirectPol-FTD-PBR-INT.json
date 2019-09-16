@@ -1,0 +1,30 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "vnsSvcRedirectPol": {
+        "attributes": {
+          "descr": "",
+          "dn": "uni/tn-t_name/svcCont/svcRedirectPol-FTD-PBR-INT",
+          "name": "FTD-PBR-INT",
+          "nameAlias": "",
+          "ownerKey": "",
+          "ownerTag": ""
+        },
+        "children": [
+          {
+            "vnsRedirectDest": {
+              "attributes": {
+                "descr": "ftdv3-security-1",
+                "ip": "2.1.1.10",
+                "mac": "00:50:56:B0:4D:A6",
+                "name": "",
+                "nameAlias": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

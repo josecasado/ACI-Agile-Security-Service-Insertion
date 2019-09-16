@@ -1,0 +1,14 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "fvRsCons": {
+        "attributes": {
+          "dn": "uni/tn-seguridad1/ap-joomla/epg-quarantine-WEB/rscons-remediacion",
+          "prio": "unspecified",
+          "tnVzBrCPName": "remediacion"
+        }
+      }
+    }
+  ]
+}

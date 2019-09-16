@@ -1,0 +1,15 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "fvRsProv": {
+        "attributes": {
+          "dn": "uni/tn-seguridad1/ap-joomla/epg-remediacion/rsprov-remediacion",
+          "matchT": "AtleastOne",
+          "prio": "unspecified",
+          "tnVzBrCPName": "remediacion"
+        }
+      }
+    }
+  ]
+}

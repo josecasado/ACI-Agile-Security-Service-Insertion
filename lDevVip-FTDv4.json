@@ -1,0 +1,176 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "vnsLDevVip": {
+        "attributes": {
+          "contextAware": "single-Context",
+          "devtype": "VIRTUAL",
+          "dn": "uni/tn-t_name/lDevVip-FTDv4",
+          "funcType": "GoTo",
+          "isCopy": "no",
+          "managed": "yes",
+          "mode": "legacy-Mode",
+          "name": "FTDv4",
+          "nameAlias": "",
+          "packageModel": "VIRTUAL",
+          "svcType": "FW",
+          "trunking": "no"
+        },
+        "children": [
+          {
+            "vnsLIf": {
+              "attributes": {
+                "encap": "unknown",
+                "name": "outside",
+                "nameAlias": ""
+              },
+              "children": [
+                {
+                  "vnsRsMetaIf": {
+                    "attributes": {
+                      "isConAndProv": "no",
+                      "tDn": "uni/infra/mDev-CISCO-FTD_FI-1.0/mIfLbl-external"
+                    }
+                  }
+                },
+                {
+                  "vnsRsCIfAttN": {
+                    "attributes": {
+                      "tDn": "uni/tn-t_name/lDevVip-FTDv4/cDev-Device1/cIf-[GigabitEthernet0/0]"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsLIf": {
+              "attributes": {
+                "encap": "unknown",
+                "name": "inside",
+                "nameAlias": ""
+              },
+              "children": [
+                {
+                  "vnsRsMetaIf": {
+                    "attributes": {
+                      "isConAndProv": "no",
+                      "tDn": "uni/infra/mDev-CISCO-FTD_FI-1.0/mIfLbl-internal"
+                    }
+                  }
+                },
+                {
+                  "vnsRsCIfAttN": {
+                    "attributes": {
+                      "tDn": "uni/tn-t_name/lDevVip-FTDv4/cDev-Device1/cIf-[GigabitEthernet0/0]"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsRsALDevToDomP": {
+              "attributes": {
+                "tDn": "uni/vmmp-VMware/dom-ACI_DVS"
+              }
+            }
+          },
+          {
+            "vnsCMgmt": {
+              "attributes": {
+                "host": "10.6.80.145",
+                "name": "",
+                "nameAlias": "",
+                "port": "443"
+              }
+            }
+          },
+          {
+            "vnsRsALDevToDevMgr": {
+              "attributes": {
+                "tnVnsDevMgrName": "FMC"
+              }
+            }
+          },
+          {
+            "vnsCDev": {
+              "attributes": {
+                "devCtxLbl": "",
+                "name": "Device1",
+                "nameAlias": "",
+                "vcenterName": "vcenterdemo",
+                "vmName": "FTDv4"
+              },
+              "children": [
+                {
+                  "vnsCMgmt": {
+                    "attributes": {
+                      "host": "10.6.80.123",
+                      "name": "",
+                      "nameAlias": "",
+                      "port": "443"
+                    }
+                  }
+                },
+                {
+                  "vnsCIf": {
+                    "attributes": {
+                      "name": "GigabitEthernet0/0",
+                      "nameAlias": "",
+                      "vnicName": "Network adapter 2"
+                    }
+                  }
+                },
+                {
+                  "vnsCCredSecret": {
+                    "attributes": {
+                      "name": "password",
+                      "nameAlias": "",
+                      "value": "Cisco123"
+                    }
+                  }
+                },
+                {
+                  "vnsCCred": {
+                    "attributes": {
+                      "name": "username",
+                      "nameAlias": "",
+                      "value": "apic"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsCCredSecret": {
+              "attributes": {
+                "name": "password",
+                "nameAlias": "",
+                "value": "Cisco123"
+              }
+            }
+          },
+          {
+            "vnsRsMDevAtt": {
+              "attributes": {
+                "tDn": "uni/infra/mDev-CISCO-FTD_FI-1.0"
+              }
+            }
+          },
+          {
+            "vnsCCred": {
+              "attributes": {
+                "name": "username",
+                "nameAlias": "",
+                "value": "apic"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

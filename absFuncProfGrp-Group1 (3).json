@@ -1,0 +1,20 @@
+{
+  "vnsAbsFuncProfContr": {
+    "attributes": {
+      "dn": "uni/tn-t_name/absFuncProfContr",
+      "status": "created,modified"
+    },
+    "children": [
+      {
+        "vnsAbsFuncProfGrp": {
+          "attributes": {
+            "dn": "uni/tn-t_name/absFuncProfContr/absFuncProfGrp-Group1",
+            "name": "Group1",
+            "status": "created"
+          },
+          "children": []
+        }
+      }
+    ]
+  }
+}

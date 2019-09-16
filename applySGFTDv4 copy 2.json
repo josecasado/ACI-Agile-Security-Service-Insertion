@@ -1,0 +1,458 @@
+{
+  "fvTenant": {
+    "attributes": {
+      "dn": "uni/tn-t_name",
+      "status": "modified"
+    },
+    "children": [
+      {
+        "fvAp": {
+          "attributes": {
+            "dn": "uni/tn-t_name/ap-anp_name",
+            "status": "modified"
+          },
+          "children": [
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app",
+                  "status": "modified"
+                },
+                "children": [
+                  {
+                    "vnsFolderInst": {
+                      "attributes": {
+                        "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-AccessPolicyFolder",
+                        "ctrctNameOrLbl": "bd_contract",
+                        "graphNameOrLbl": "FTDv4-SG",
+                        "nodeNameOrLbl": "N1",
+                        "name": "AccessPolicyFolder",
+                        "key": "AccessPolicyFolder",
+                        "status": "created,modified"
+                      },
+                      "children": [
+                        {
+                          "vnsCfgRelInst": {
+                            "attributes": {
+                              "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-AccessPolicyFolder/CfgRelInst-InAccessPolicyRel",
+                              "name": "InAccessPolicyRel",
+                              "key": "InAccessPolicyRel",
+                              "targetName": "MyAccessControlPolicy",
+                              "status": "created,modified"
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "vnsFolderInst": {
+                      "attributes": {
+                        "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-IntConfig",
+                        "ctrctNameOrLbl": "bd_contract",
+                        "graphNameOrLbl": "FTDv4-SG",
+                        "nodeNameOrLbl": "N1",
+                        "name": "IntConfig",
+                        "key": "InIntfConfigRelFolder",
+                        "status": "created,modified"
+                      },
+                      "children": [
+                        {
+                          "vnsCfgRelInst": {
+                            "attributes": {
+                              "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-IntConfig/CfgRelInst-InConfigrel",
+                              "name": "InConfigrel",
+                              "key": "InIntfConfigRel",
+                              "targetName": "internalInterface",
+                              "status": "created,modified"
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "vnsFolderInst": {
+                      "attributes": {
+                        "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-MyAccessControlPolicy",
+                        "ctrctNameOrLbl": "bd_contract",
+                        "graphNameOrLbl": "FTDv4-SG",
+                        "nodeNameOrLbl": "N1",
+                        "name": "MyAccessControlPolicy",
+                        "key": "AccessPolicy",
+                        "status": "created,modified"
+                      },
+                      "children": [
+                        {
+                          "vnsFolderInst": {
+                            "attributes": {
+                              "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-MyAccessControlPolicy/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-ACIAccRule",
+                              "ctrctNameOrLbl": "bd_contract",
+                              "graphNameOrLbl": "FTDv4-SG",
+                              "nodeNameOrLbl": "N1",
+                              "name": "ACIAccRule",
+                              "key": "AccessRule",
+                              "status": "created,modified"
+                            },
+                            "children": [
+                              {
+                                "vnsFolderInst": {
+                                  "attributes": {
+                                    "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-MyAccessControlPolicy/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-ACIAccRule/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-AccDestinationZones",
+                                    "ctrctNameOrLbl": "bd_contract",
+                                    "graphNameOrLbl": "FTDv4-SG",
+                                    "nodeNameOrLbl": "N1",
+                                    "name": "AccDestinationZones",
+                                    "key": "AccDestinationZones",
+                                    "status": "created,modified"
+                                  },
+                                  "children": [
+                                    {
+                                      "vnsCfgRelInst": {
+                                        "attributes": {
+                                          "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-MyAccessControlPolicy/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-ACIAccRule/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-AccDestinationZones/CfgRelInst-DestinationZone",
+                                          "name": "DestinationZone",
+                                          "key": "DestinationZones",
+                                          "targetName": "internalInterface/int_security_zone",
+                                          "status": "created,modified"
+                                        },
+                                        "children": []
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "vnsParamInst": {
+                                  "attributes": {
+                                    "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-MyAccessControlPolicy/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-ACIAccRule/ParamInst-Bi-Directional",
+                                    "name": "Bi-Directional",
+                                    "key": "bidirectional",
+                                    "value": "true",
+                                    "status": "created,modified"
+                                  },
+                                  "children": []
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "vnsFolderInst": {
+                      "attributes": {
+                        "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-ProvSZRT",
+                        "ctrctNameOrLbl": "bd_contract",
+                        "graphNameOrLbl": "FTDv4-SG",
+                        "nodeNameOrLbl": "N1",
+                        "name": "ProvSZRT",
+                        "key": "SecurityZone",
+                        "status": "created,modified"
+                      },
+                      "children": [
+                        {
+                          "vnsParamInst": {
+                            "attributes": {
+                              "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-ProvSZRT/ParamInst-type",
+                              "name": "type",
+                              "key": "type",
+                              "value": "ROUTED",
+                              "status": "created,modified"
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "vnsFolderInst": {
+                      "attributes": {
+                        "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface",
+                        "ctrctNameOrLbl": "bd_contract",
+                        "graphNameOrLbl": "FTDv4-SG",
+                        "nodeNameOrLbl": "N1",
+                        "name": "internalInterface",
+                        "key": "InterfaceConfig",
+                        "status": "created,modified"
+                      },
+                      "children": [
+                        {
+                          "vnsFolderInst": {
+                            "attributes": {
+                              "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-IPv4Config",
+                              "ctrctNameOrLbl": "bd_contract",
+                              "graphNameOrLbl": "FTDv4-SG",
+                              "nodeNameOrLbl": "N1",
+                              "name": "IPv4Config",
+                              "key": "IPv4Config",
+                              "status": "created,modified"
+                            },
+                            "children": [
+                              {
+                                "vnsFolderInst": {
+                                  "attributes": {
+                                    "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-IPv4Config/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-static",
+                                    "ctrctNameOrLbl": "bd_contract",
+                                    "graphNameOrLbl": "FTDv4-SG",
+                                    "nodeNameOrLbl": "N1",
+                                    "name": "static",
+                                    "key": "static",
+                                    "status": "created,modified"
+                                  },
+                                  "children": [
+                                    {
+                                      "vnsParamInst": {
+                                        "attributes": {
+                                          "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-IPv4Config/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-static/ParamInst-address",
+                                          "name": "address",
+                                          "key": "address",
+                                          "value": "2.1.1.254/24",
+                                          "status": "created,modified"
+                                        },
+                                        "children": []
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "vnsFolderInst": {
+                            "attributes": {
+                              "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-int_security_zone",
+                              "ctrctNameOrLbl": "bd_contract",
+                              "graphNameOrLbl": "FTDv4-SG",
+                              "nodeNameOrLbl": "N1",
+                              "name": "int_security_zone",
+                              "key": "int_security_zone",
+                              "status": "created,modified"
+                            },
+                            "children": [
+                              {
+                                "vnsCfgRelInst": {
+                                  "attributes": {
+                                    "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-int_security_zone/CfgRelInst-security_zone",
+                                    "name": "security_zone",
+                                    "key": "security_zone",
+                                    "targetName": "ProvSZRT",
+                                    "status": "created,modified"
+                                  },
+                                  "children": []
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "vnsParamInst": {
+                            "attributes": {
+                              "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface/ParamInst-enabled",
+                              "name": "enabled",
+                              "key": "enabled",
+                              "value": "true",
+                              "status": "created,modified"
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "vnsParamInst": {
+                            "attributes": {
+                              "dn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface/ParamInst-ifname",
+                              "name": "ifname",
+                              "key": "ifname",
+                              "value": "Provider",
+                              "status": "created,modified"
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "tnVzBrCPName": "bd_contract",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ap-anp_name/epg-epg-web",
+                  "status": "modified"
+                },
+                "children": [
+                  {
+                    "fvRsCons": {
+                      "attributes": {
+                        "tnVzBrCPName": "bd_contract",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vzBrCP": {
+          "attributes": {
+            "dn": "uni/tn-t_name/brc-bd_contract",
+            "status": "modified"
+          },
+          "children": [
+            {
+              "vzSubj": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/brc-bd_contract/subj-Subject",
+                  "status": "modified"
+                },
+                "children": [
+                  {
+                    "vzRsSubjGraphAtt": {
+                      "attributes": {
+                        "tnVnsAbsGraphName": "FTDv4-SG",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vnsLDevCtx": {
+          "attributes": {
+            "dn": "uni/tn-t_name/ldevCtx-c-bd_contract-g-FTDv4-SG-n-N1",
+            "ctrctNameOrLbl": "bd_contract",
+            "graphNameOrLbl": "FTDv4-SG",
+            "nodeNameOrLbl": "N1",
+            "status": "created,modified",
+            "rn": "ldevCtx-c-bd_contract-g-FTDv4-SG-n-N1"
+          },
+          "children": [
+            {
+              "vnsLIfCtx": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ldevCtx-c-bd_contract-g-FTDv4-SG-n-N1/lIfCtx-c-consumer",
+                  "connNameOrLbl": "consumer",
+                  "status": "created,modified",
+                  "rn": "lIfCtx-c-consumer"
+                },
+                "children": [
+                  {
+                    "vnsRsLIfCtxToBD": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/BD-bd_ftd_int",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToLIf": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/lDevVip-FTDv4/lIf-outside",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToSvcRedirectPol": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/svcCont/svcRedirectPol-FTD-PBR-INT",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "vnsLIfCtx": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ldevCtx-c-bd_contract-g-FTDv4-SG-n-N1/lIfCtx-c-provider",
+                  "connNameOrLbl": "provider",
+                  "status": "created,modified",
+                  "rn": "lIfCtx-c-provider"
+                },
+                "children": [
+                  {
+                    "vnsRsLIfCtxToBD": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/BD-bd_ftd_int",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToLIf": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/lDevVip-FTDv4/lIf-inside",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToSvcRedirectPol": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/svcCont/svcRedirectPol-FTD-PBR-INT",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "vnsRsLDevCtxToLDev": {
+                "attributes": {
+                  "tDn": "uni/tn-t_name/lDevVip-FTDv4",
+                  "status": "created,modified"
+                },
+                "children": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "aaaPartialRbacRule": {
+          "attributes": {
+            "dn": "uni/tn-t_name/prule-[uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-IPv4Config/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-static/ParamInst-address]-dom-all",
+            "partialObjectDn": "uni/tn-t_name/ap-anp_name/epg-epg-app/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-internalInterface/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-IPv4Config/FI_C-bd_contract-G-FTDv4-SG-F-N1-N-static/ParamInst-address",
+            "domain": "all",
+            "allowWrites": "yes",
+            "status": "created"
+          },
+          "children": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "fvTenant": {
+    "attributes": {
+      "dn": "uni/tn-t_name",
+      "status": "modified"
+    },
+    "children": [
+      {
+        "fvAp": {
+          "attributes": {
+            "dn": "uni/tn-t_name/ap-anp_name",
+            "status": "modified"
+          },
+          "children": [
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ap-anp_name/epg-epg_app_name",
+                  "status": "modified"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "tnVzBrCPName": "contract_bd_name",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ap-anp_name/epg-epg_web_name",
+                  "status": "modified"
+                },
+                "children": [
+                  {
+                    "fvRsCons": {
+                      "attributes": {
+                        "tnVzBrCPName": "contract_bd_name",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vzBrCP": {
+          "attributes": {
+            "dn": "uni/tn-t_name/brc-contract_bd_name",
+            "status": "modified"
+          },
+          "children": [
+            {
+              "vzSubj": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/brc-contract_bd_name/subj-subject_bd_name",
+                  "status": "modified"
+                },
+                "children": [
+                  {
+                    "vzRsSubjGraphAtt": {
+                      "attributes": {
+                        "tnVnsAbsGraphName": "ftdv3-graph",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vnsLDevCtx": {
+          "attributes": {
+            "dn": "uni/tn-t_name/ldevCtx-c-contract_bd_name-g-ftdv3-graph-n-N1",
+            "ctrctNameOrLbl": "contract_bd_name",
+            "graphNameOrLbl": "ftdv3-graph",
+            "nodeNameOrLbl": "N1",
+            "status": "created,modified",
+            "rn": "ldevCtx-c-contract_bd_name-g-ftdv3-graph-n-N1"
+          },
+          "children": [
+            {
+              "vnsLIfCtx": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ldevCtx-c-contract_bd_name-g-ftdv3-graph-n-N1/lIfCtx-c-consumer",
+                  "connNameOrLbl": "consumer",
+                  "status": "created,modified",
+                  "rn": "lIfCtx-c-consumer"
+                },
+                "children": [
+                  {
+                    "vnsRsLIfCtxToBD": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/BD-bd_ftd_int",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToLIf": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/lDevVip-ftdv3/lIf-in-out",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToSvcRedirectPol": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/svcCont/svcRedirectPol-FTD-PBR-INT",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "vnsLIfCtx": {
+                "attributes": {
+                  "dn": "uni/tn-t_name/ldevCtx-c-contract_bd_name-g-ftdv3-graph-n-N1/lIfCtx-c-provider",
+                  "connNameOrLbl": "provider",
+                  "status": "created,modified",
+                  "rn": "lIfCtx-c-provider"
+                },
+                "children": [
+                  {
+                    "vnsRsLIfCtxToBD": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/BD-bd_ftd_int",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToLIf": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/lDevVip-ftdv3/lIf-in-out",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "vnsRsLIfCtxToSvcRedirectPol": {
+                      "attributes": {
+                        "tDn": "uni/tn-t_name/svcCont/svcRedirectPol-FTD-PBR-INT",
+                        "status": "created,modified"
+                      },
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "vnsRsLDevCtxToLDev": {
+                "attributes": {
+                  "tDn": "uni/tn-t_name/lDevVip-ftdv3",
+                  "status": "created,modified"
+                },
+                "children": []
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

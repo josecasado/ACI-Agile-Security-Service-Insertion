@@ -1,0 +1,30 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "vnsSvcRedirectPol": {
+        "attributes": {
+          "descr": "",
+          "dn": "uni/tn-t_name/svcCont/svcRedirectPol-ASAv-PBR-EXT",
+          "name": "ASAv-PBR-EXT",
+          "nameAlias": "",
+          "ownerKey": "",
+          "ownerTag": ""
+        },
+        "children": [
+          {
+            "vnsRedirectDest": {
+              "attributes": {
+                "descr": "asav-security-1",
+                "ip": "192.168.204.100",
+                "mac": "FC:5B:39:2D:6B:BF",
+                "name": "",
+                "nameAlias": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "vnsAbsGraph": {
+        "attributes": {
+          "descr": "",
+          "dn": "uni/tn-t_name/AbsGraph-ASAv-pbr-ext",
+          "name": "ASAv-pbr-ext",
+          "nameAlias": "",
+          "ownerKey": "",
+          "ownerTag": "",
+          "uiTemplateType": "UNSPECIFIED"
+        },
+        "children": [
+          {
+            "vnsAbsTermNodeProv": {
+              "attributes": {
+                "descr": "",
+                "name": "T2",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": ""
+              },
+              "children": [
+                {
+                  "vnsOutTerm": {
+                    "attributes": {
+                      "descr": "",
+                      "name": "",
+                      "nameAlias": ""
+                    }
+                  }
+                },
+                {
+                  "vnsInTerm": {
+                    "attributes": {
+                      "descr": "",
+                      "name": "",
+                      "nameAlias": ""
+                    }
+                  }
+                },
+                {
+                  "vnsAbsTermConn": {
+                    "attributes": {
+                      "attNotify": "no",
+                      "descr": "",
+                      "name": "1",
+                      "nameAlias": "",
+                      "ownerKey": "",
+                      "ownerTag": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsAbsTermNodeCon": {
+              "attributes": {
+                "descr": "",
+                "name": "T1",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": ""
+              },
+              "children": [
+                {
+                  "vnsOutTerm": {
+                    "attributes": {
+                      "descr": "",
+                      "name": "",
+                      "nameAlias": ""
+                    }
+                  }
+                },
+                {
+                  "vnsInTerm": {
+                    "attributes": {
+                      "descr": "",
+                      "name": "",
+                      "nameAlias": ""
+                    }
+                  }
+                },
+                {
+                  "vnsAbsTermConn": {
+                    "attributes": {
+                      "attNotify": "no",
+                      "descr": "",
+                      "name": "1",
+                      "nameAlias": "",
+                      "ownerKey": "",
+                      "ownerTag": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsAbsNode": {
+              "attributes": {
+                "descr": "",
+                "funcTemplateType": "FW_ROUTED",
+                "funcType": "GoTo",
+                "isCopy": "no",
+                "managed": "no",
+                "name": "ASAv",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": "",
+                "routingMode": "Redirect",
+                "sequenceNumber": "0",
+                "shareEncap": "no"
+              },
+              "children": [
+                {
+                  "vnsRsNodeToLDev": {
+                    "attributes": {
+                      "tDn": "uni/tn-t_name/lDevVip-ASAv-Security-1"
+                    }
+                  }
+                },
+                {
+                  "vnsAbsFuncConn": {
+                    "attributes": {
+                      "attNotify": "no",
+                      "descr": "",
+                      "name": "consumer",
+                      "nameAlias": "",
+                      "ownerKey": "",
+                      "ownerTag": ""
+                    }
+                  }
+                },
+                {
+                  "vnsAbsFuncConn": {
+                    "attributes": {
+                      "attNotify": "no",
+                      "descr": "",
+                      "name": "provider",
+                      "nameAlias": "",
+                      "ownerKey": "",
+                      "ownerTag": ""
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsAbsConnection": {
+              "attributes": {
+                "adjType": "L3",
+                "connDir": "provider",
+                "connType": "external",
+                "descr": "",
+                "directConnect": "no",
+                "name": "C2",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": "",
+                "unicastRoute": "yes"
+              },
+              "children": [
+                {
+                  "vnsRsAbsConnectionConns": {
+                    "attributes": {
+                      "tDn": "uni/tn-t_name/AbsGraph-ASAv-pbr-ext/AbsNode-ASAv/AbsFConn-provider"
+                    }
+                  }
+                },
+                {
+                  "vnsRsAbsConnectionConns": {
+                    "attributes": {
+                      "tDn": "uni/tn-t_name/AbsGraph-ASAv-pbr-ext/AbsTermNodeProv-T2/AbsTConn"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsAbsConnection": {
+              "attributes": {
+                "adjType": "L3",
+                "connDir": "provider",
+                "connType": "external",
+                "descr": "",
+                "directConnect": "no",
+                "name": "C1",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": "",
+                "unicastRoute": "yes"
+              },
+              "children": [
+                {
+                  "vnsRsAbsConnectionConns": {
+                    "attributes": {
+                      "tDn": "uni/tn-t_name/AbsGraph-ASAv-pbr-ext/AbsTermNodeCon-T1/AbsTConn"
+                    }
+                  }
+                },
+                {
+                  "vnsRsAbsConnectionConns": {
+                    "attributes": {
+                      "tDn": "uni/tn-t_name/AbsGraph-ASAv-pbr-ext/AbsNode-ASAv/AbsFConn-consumer"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

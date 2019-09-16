@@ -1,0 +1,334 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "vnsAbsFuncProf": {
+        "attributes": {
+          "descr": "",
+          "dn": "uni/tn-t_name/absFuncProfContr/absFuncProfGrp-Group1/absFuncProf-one-armed",
+          "name": "one-armed",
+          "nameAlias": "",
+          "ownerKey": "",
+          "ownerTag": ""
+        },
+        "children": [
+          {
+            "vnsRsProfToMFunc": {
+              "attributes": {
+                "tDn": "uni/infra/mDev-CISCO-FTD_FI-1.0/mFunc-FTD"
+              }
+            }
+          },
+          {
+            "vnsAbsFuncCfg": {
+              "attributes": {
+                "descr": "",
+                "name": "funcConfig",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": ""
+              },
+              "children": [
+                {
+                  "vnsAbsFolder": {
+                    "attributes": {
+                      "cardinality": "unspecified",
+                      "devCtxLbl": "",
+                      "key": "InIntfConfigRelFolder",
+                      "locked": "no",
+                      "name": "IntConfig",
+                      "nameAlias": "",
+                      "profileBehaviorShared": "no",
+                      "scopedBy": "epg"
+                    },
+                    "children": [
+                      {
+                        "vnsAbsCfgRel": {
+                          "attributes": {
+                            "cardinality": "unspecified",
+                            "key": "InIntfConfigRel",
+                            "locked": "no",
+                            "mandatory": "no",
+                            "name": "InConfigrel",
+                            "nameAlias": "",
+                            "targetName": "internalInterface"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "vnsAbsFolder": {
+                    "attributes": {
+                      "cardinality": "unspecified",
+                      "devCtxLbl": "",
+                      "key": "AccessPolicyFolder",
+                      "locked": "no",
+                      "name": "AccessPolicyFolder",
+                      "nameAlias": "",
+                      "profileBehaviorShared": "no",
+                      "scopedBy": "epg"
+                    },
+                    "children": [
+                      {
+                        "vnsAbsCfgRel": {
+                          "attributes": {
+                            "cardinality": "unspecified",
+                            "key": "InAccessPolicyRel",
+                            "locked": "no",
+                            "mandatory": "no",
+                            "name": "InAccessPolicyRel",
+                            "nameAlias": "",
+                            "targetName": "ACIAccPolicyRouted"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsAbsDevCfg": {
+              "attributes": {
+                "descr": "",
+                "name": "devConfig",
+                "nameAlias": "",
+                "ownerKey": "",
+                "ownerTag": ""
+              },
+              "children": [
+                {
+                  "vnsAbsFolder": {
+                    "attributes": {
+                      "cardinality": "unspecified",
+                      "devCtxLbl": "",
+                      "key": "SecurityZone",
+                      "locked": "no",
+                      "name": "ProvSZRT",
+                      "nameAlias": "",
+                      "profileBehaviorShared": "no",
+                      "scopedBy": "epg"
+                    },
+                    "children": [
+                      {
+                        "vnsAbsParam": {
+                          "attributes": {
+                            "cardinality": "unspecified",
+                            "key": "type",
+                            "locked": "no",
+                            "mandatory": "no",
+                            "name": "type",
+                            "nameAlias": "",
+                            "validation": "",
+                            "value": "ROUTED"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "vnsAbsFolder": {
+                    "attributes": {
+                      "cardinality": "unspecified",
+                      "devCtxLbl": "",
+                      "key": "AccessPolicy",
+                      "locked": "no",
+                      "name": "ACIAccPolicyRouted",
+                      "nameAlias": "",
+                      "profileBehaviorShared": "no",
+                      "scopedBy": "epg"
+                    },
+                    "children": [
+                      {
+                        "vnsAbsFolder": {
+                          "attributes": {
+                            "cardinality": "unspecified",
+                            "devCtxLbl": "",
+                            "key": "AccessRule",
+                            "locked": "no",
+                            "name": "ACIAccRule",
+                            "nameAlias": "",
+                            "profileBehaviorShared": "no",
+                            "scopedBy": "epg"
+                          },
+                          "children": [
+                            {
+                              "vnsAbsParam": {
+                                "attributes": {
+                                  "cardinality": "unspecified",
+                                  "key": "bidirectional",
+                                  "locked": "no",
+                                  "mandatory": "no",
+                                  "name": "Bi-Directional",
+                                  "nameAlias": "",
+                                  "validation": "",
+                                  "value": "true"
+                                }
+                              }
+                            },
+                            {
+                              "vnsAbsFolder": {
+                                "attributes": {
+                                  "cardinality": "unspecified",
+                                  "devCtxLbl": "",
+                                  "key": "AccDestinationZones",
+                                  "locked": "no",
+                                  "name": "AccDestinationZones",
+                                  "nameAlias": "",
+                                  "profileBehaviorShared": "no",
+                                  "scopedBy": "epg"
+                                },
+                                "children": [
+                                  {
+                                    "vnsAbsCfgRel": {
+                                      "attributes": {
+                                        "cardinality": "unspecified",
+                                        "key": "DestinationZones",
+                                        "locked": "no",
+                                        "mandatory": "no",
+                                        "name": "DestinationZone",
+                                        "nameAlias": "",
+                                        "targetName": "internalInterface/int_security_zone"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "vnsAbsFolder": {
+                    "attributes": {
+                      "cardinality": "unspecified",
+                      "devCtxLbl": "",
+                      "key": "InterfaceConfig",
+                      "locked": "no",
+                      "name": "internalInterface",
+                      "nameAlias": "",
+                      "profileBehaviorShared": "no",
+                      "scopedBy": "epg"
+                    },
+                    "children": [
+                      {
+                        "vnsAbsParam": {
+                          "attributes": {
+                            "cardinality": "unspecified",
+                            "key": "ifname",
+                            "locked": "no",
+                            "mandatory": "no",
+                            "name": "ifname",
+                            "nameAlias": "",
+                            "validation": "",
+                            "value": "Provider"
+                          }
+                        }
+                      },
+                      {
+                        "vnsAbsParam": {
+                          "attributes": {
+                            "cardinality": "unspecified",
+                            "key": "enabled",
+                            "locked": "no",
+                            "mandatory": "no",
+                            "name": "enabled",
+                            "nameAlias": "",
+                            "validation": "",
+                            "value": "true"
+                          }
+                        }
+                      },
+                      {
+                        "vnsAbsFolder": {
+                          "attributes": {
+                            "cardinality": "unspecified",
+                            "devCtxLbl": "",
+                            "key": "IPv4Config",
+                            "locked": "no",
+                            "name": "IPv4Config",
+                            "nameAlias": "",
+                            "profileBehaviorShared": "no",
+                            "scopedBy": "epg"
+                          },
+                          "children": [
+                            {
+                              "vnsAbsFolder": {
+                                "attributes": {
+                                  "cardinality": "unspecified",
+                                  "devCtxLbl": "",
+                                  "key": "static",
+                                  "locked": "no",
+                                  "name": "static",
+                                  "nameAlias": "",
+                                  "profileBehaviorShared": "no",
+                                  "scopedBy": "epg"
+                                },
+                                "children": [
+                                  {
+                                    "vnsAbsParam": {
+                                      "attributes": {
+                                        "cardinality": "unspecified",
+                                        "key": "address",
+                                        "locked": "no",
+                                        "mandatory": "yes",
+                                        "name": "address",
+                                        "nameAlias": "",
+                                        "validation": "",
+                                        "value": ""
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "vnsAbsFolder": {
+                          "attributes": {
+                            "cardinality": "unspecified",
+                            "devCtxLbl": "",
+                            "key": "int_security_zone",
+                            "locked": "no",
+                            "name": "int_security_zone",
+                            "nameAlias": "",
+                            "profileBehaviorShared": "no",
+                            "scopedBy": "epg"
+                          },
+                          "children": [
+                            {
+                              "vnsAbsCfgRel": {
+                                "attributes": {
+                                  "cardinality": "unspecified",
+                                  "key": "security_zone",
+                                  "locked": "no",
+                                  "mandatory": "no",
+                                  "name": "security_zone",
+                                  "nameAlias": "",
+                                  "targetName": "ProvSZRT"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

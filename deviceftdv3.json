@@ -1,0 +1,96 @@
+{
+  "totalCount": "1",
+  "imdata": [
+    {
+      "vnsLDevVip": {
+        "attributes": {
+          "contextAware": "single-Context",
+          "devtype": "VIRTUAL",
+          "dn": "uni/tn-t_name/lDevVip-ftdv3",
+          "funcType": "GoTo",
+          "isCopy": "no",
+          "managed": "no",
+          "mode": "legacy-Mode",
+          "name": "ftdv3",
+          "nameAlias": "",
+          "packageModel": "",
+          "svcType": "FW",
+          "trunking": "no"
+        },
+        "children": [
+          {
+            "vnsRsALDevToDomP": {
+              "attributes": {
+                "tDn": "uni/vmmp-VMware/dom-ACI_DVS"
+              }
+            }
+          },
+          {
+            "vnsLIf": {
+              "attributes": {
+                "encap": "unknown",
+                "name": "in-out",
+                "nameAlias": ""
+              },
+              "children": [
+                {
+                  "vnsRsCIfAttN": {
+                    "attributes": {
+                      "tDn": "uni/tn-t_name/lDevVip-ftdv3/cDev-Device1/cIf-[Giga0/0]"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "vnsCDev": {
+              "attributes": {
+                "devCtxLbl": "",
+                "name": "Device1",
+                "nameAlias": "",
+                "vcenterName": "vcenterdemo",
+                "vmName": "FTDv3"
+              },
+              "children": [
+                {
+                  "vnsRsCDevToCtrlrP": {
+                    "attributes": {
+                      "tDn": "uni/vmmp-VMware/dom-ACI_DVS/ctrlr-vcenterdemo"
+                    }
+                  }
+                },
+                {
+                  "vnsCIf": {
+                    "attributes": {
+                      "name": "Giga0/0",
+                      "nameAlias": "",
+                      "vnicName": "Network adapter 2"
+                    }
+                  }
+                },
+                {
+                  "vnsCCredSecret": {
+                    "attributes": {
+                      "name": "password",
+                      "nameAlias": ""
+                    }
+                  }
+                },
+                {
+                  "vnsCCred": {
+                    "attributes": {
+                      "name": "username",
+                      "nameAlias": "",
+                      "value": "a"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
